@@ -1,0 +1,16 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 147.2 147.2">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #d2d3d4;
+      }
+
+      .cls-2 {
+        fill: #818285;
+      }
+    </style>
+  </defs>
+  <title>fb</title>
+  <circle class="cls-1" cx="73.6" cy="73.6" r="73.6"/>
+  <path class="cls-2" d="M504.93,329.65l-.15-18.36h-25s-19.8,4.3-21.55,23v14.58H443.67v19.28h14l.11,55.57a67.7,67.7,0,0,0,19.07,0L477,368l26-.08,2.24-19.19H476.65v-11.5s.82-6.64,7.24-7.09h21Z" transform="translate(-392.52 -277.27)"/>
+</svg>
