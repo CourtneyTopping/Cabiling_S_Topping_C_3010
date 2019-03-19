@@ -263,6 +263,68 @@ footer img {
 
 
 
+/*ABOUT PAGE*/
+
+.Jen-desc {
+	clear: both;
+	box-shadow: 0px 5px 15px rgba(0, 0, 0, .25);
+	margin: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	top: 70px;
+	min-height: 90px;
+	background-image: linear-gradient(#69d4fd, #fff);
+	position: relative;
+	
+}
+
+.about-jen-img {
+	width: 55%;
+	position: absolute;
+	top: -50px;
+	float: right;
+	right: 0;
+}
+
+.Jen-desc p {
+	margin-top: 40px;
+}
+
+.book1 {
+	margin-top: 80px;
+}
+
+.book2 {
+	margin-top: 80px;
+}
+.book1 img {
+	width: 50%;
+}
+
+.book2 img {
+	width: 50%;
+}
+
+.chico-img img {
+	width: 80%;
+}
+
+.chico-img {
+	margin: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*MEDIA QUERIES*/
 
 @media (max-width: 575.98px) {
@@ -273,6 +335,9 @@ footer img {
 	.navbar-brand img{
 	width: 50%;
 }
+	.book2 {
+		margin-top: 30px;
+	}
 }
 
 @media (min-width: 536px) {
