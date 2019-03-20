@@ -19,7 +19,7 @@ h3, h1, h2{
 
 p {
 	font-family: Arial, "sans-serif";
-	font-size: .75rem;
+	font-size: 1rem;
 }
 
 body {
@@ -265,29 +265,32 @@ footer img {
 
 /*ABOUT PAGE*/
 
+
+#about-jumbotron {
+	background-image: url(../images/testimonial_bg3.jpg)!important;
+}
+
 .Jen-desc {
 	clear: both;
 	box-shadow: 0px 5px 15px rgba(0, 0, 0, .25);
 	margin: 20px;
 	padding-top: 20px;
 	padding-bottom: 20px;
-	top: 70px;
+	top: 50px;
 	min-height: 90px;
 	background-image: linear-gradient(#69d4fd, #fff);
-	position: relative;
 	
 }
 
 .about-jen-img {
 	width: 55%;
-	position: absolute;
-	top: -50px;
+	top: -120px;
 	float: right;
 	right: 0;
 }
 
 .Jen-desc p {
-	margin-top: 40px;
+	margin-top: 20px;
 }
 
 .book1 {
@@ -296,6 +299,7 @@ footer img {
 
 .book2 {
 	margin-top: 80px;
+	margin-bottom: 30px;
 }
 .book1 img {
 	width: 50%;
@@ -305,23 +309,131 @@ footer img {
 	width: 50%;
 }
 
-.chico-img img {
+.chico-desc {
+	top: 30px;
+	margin-bottom: 40px;
+	margin-left: 20px;
+	margin-right: 20px;
+	padding: 20px;
+	clear: both;
+	box-shadow: 0px 5px 15px rgba(0, 0, 0, .25);
+	min-height: 90px;
+	background-image: linear-gradient(#69d4fd, #fff);
+}
+
+.chico-desc img {
+	width: 50%;
+}
+
+
+.illus-desc {
+	top: 50px;
+	margin-bottom: 40px;
+	margin-left: 20px;
+	margin-right: 20px;
+	padding: 20px;
+	clear: both;
+	box-shadow: 0px 5px 15px rgba(0, 0, 0, .25);
+	min-height: 90px;
+	background-image: linear-gradient(#69d4fd, #fff);
+}
+
+
+/* News */
+#news-jumbotron {
+	background-image: url(../images/news_jumbotron.jpg)!important;
+}
+
+
+.cda1 {
 	width: 80%;
 }
 
-.chico-img {
-	margin: 20px;
+.cda2 {
+	width: 70%;
 }
 
 
+/* Donate */
+
+#donate-jumbotron {
+	background-image: url(../images/testimonial_bg1.jpg)!important;
+}
 
 
+.formCard {
+	border-radius: 3px;
+	min-height: 250px;
+	margin-top: 20px;
+	box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+	padding: 10px;
+	box-sizing: border-box;
+	margin: 10px 0 30px 0;
+}
 
+.formCard button {
+	width: 90px;
+	margin: 10px;
+}
 
+.val-input {
+	width: 25%;
+}
+/* Progress Bar */
+#progressbar {
+	counter-reset: step;
+	margin-bottom: 90px;
+}
 
+#progressbar li {
+	list-style-type: none;
+	float: left;
+	width: 45%;
+	position: relative;
+	text-align: center;
+}
 
+#progressbar li:before {
+	content: counter(step);
+	counter-increment: step;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	border: 1px solid #ccc;
+	display: block;
+	text-align: center;
+	margin: 0 auto 10px auto;
+	border-radius: 50%;
+	background-color: white;
+	
+}
 
+#progressbar li:after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	background-color: #ccc;
+	top: 15px;
+	left: -50%;
+	z-index: -1;
+}
 
+#progressbar li:first-child:after {
+	content: none;
+}
+
+#progressbar li.active {
+	color: green;
+}
+
+#progressbar li.active:before {
+	border-color: green;
+}
+
+#progressbar li.active + li:after {
+	background-color: green;
+}
 
 
 
@@ -344,10 +456,11 @@ footer img {
 	nav a{
 	font-family: 'Chewy';
 	font-size-adjust: auto;
-}
+	}
 	.navbar-brand img{
 	width: 60%;
-}
+	}
+	
 }
 
 @media (min-width: 736px) {
@@ -362,6 +475,12 @@ footer img {
 	}
 	.navbar-nav {
 		overflow: visible;
+	}
+	.cda2 {
+		height: 100%;
+	}
+	.about-jen-img {
+		width: 40%;
 	}
 }
 
