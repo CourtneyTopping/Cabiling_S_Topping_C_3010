@@ -51,6 +51,7 @@ nav a{
 
 .navbar {
 	background-image: linear-gradient(#028ec2,#00aeef) !important;
+	box-shadow: 0px 8px 15px rgba(0, 0, 0, .25);
 	min-height: 90px;
 	position: fixed;
 }
@@ -69,18 +70,18 @@ nav a{
 
 
 .nav-item {
-	 transition: 0.4s;
+	transition: 0.4s;
   color: #fff;
   font-size: 20px;
   text-decoration: none;
-  padding: 0 5px;
+  padding: 0 ;
   margin: 0;
 }
 
 .nav-item:hover {
 	background-image: linear-gradient(#00aeef, #028ec2) !important;
   color: #EEA200;
-  padding: 24px 10px;
+  padding: 15px 10px;
 }
 
 .nav-item {
@@ -199,6 +200,10 @@ nav a{
 	font-family: "Chewy";
 }
 
+.testimonials .carousel-indicators {
+	bottom: -20px;
+}
+
 .carousel-inner .img-box {
 	width: 135px;
 	height: 135px;
@@ -285,8 +290,9 @@ footer img {
 .about-jen-img {
 	width: 55%;
 	top: -120px;
+	bottom: 0 !important;
 	float: right;
-	right: 0;
+	right: -20px;
 }
 
 .Jen-desc p {
@@ -375,6 +381,9 @@ footer img {
 	width: 90px;
 	margin: 10px;
 }
+.formCard img {
+	margin: 20px 0pc 20px 0px;
+}
 
 .val-input {
 	width: 25%;
@@ -391,40 +400,44 @@ footer img {
 	width: 45%;
 	position: relative;
 	text-align: center;
+	color: #C6C6C6;
 }
 
 #progressbar li:before {
 	content: counter(step);
 	counter-increment: step;
-	width: 30px;
-	height: 30px;
+	width: 40px;
+	height: 40px;
 	line-height: 30px;
-	border: 1px solid #ccc;
 	display: block;
 	text-align: center;
 	margin: 0 auto 10px auto;
-	border-radius: 50%;
-	background-color: white;
+	background: url(../images/paw.svg) no-repeat;
 	
 }
 
 #progressbar li:after {
 	content: '';
 	position: absolute;
-	width: 100%;
+	width: 80%;
 	height: 2px;
 	background-color: #ccc;
 	top: 15px;
-	left: -50%;
-	z-index: -1;
+	left: -40%;
+	z-index: -2;
 }
 
 #progressbar li:first-child:after {
 	content: none;
 }
 
+#progressbar li:nth-child(even) {
+		opacity: 0.5;
+}
+
 #progressbar li.active {
-	color: green;
+	color: #3CEC00;
+	font-weight: bolder;
 }
 
 #progressbar li.active:before {
@@ -432,7 +445,7 @@ footer img {
 }
 
 #progressbar li.active + li:after {
-	background-color: green;
+	background-color:#E2E1E1;
 }
 
 
@@ -476,11 +489,18 @@ footer img {
 	.navbar-nav {
 		overflow: visible;
 	}
+	.nav-item:hover {
+		background: url(../images/hover.svg) no-repeat center !important;
+		text-align: center;
+		display: block;
+		transition-delay: 0s;
+	}
 	.cda2 {
 		height: 100%;
 	}
 	.about-jen-img {
-		width: 40%;
+		width: 80%;
+		right: -10px;
 	}
 }
 
