@@ -256,6 +256,13 @@ footer img {
 	font-size: 1rem;
 }
 
+.sec-footer {
+	background-color:#100800;
+}
+
+.f-donate {
+	margin-right: 10px !important;
+}
 .jenInfo {
 	float: right;
 	vertical-align:top;
@@ -436,17 +443,47 @@ footer img {
 }
 
 #progressbar li.active {
-	color: #3CEC00;
+	color: black;
 	font-weight: bolder;
 }
 
 #progressbar li.active:before {
-	border-color: green;
+	border-color: black;
 }
 
 #progressbar li.active + li:after {
 	background-color:#E2E1E1;
 }
+
+.donators {
+
+	margin: 20px 20px 20px 20px;
+	padding: 10px;
+	border-radius: 25px;
+	height: 100%;
+	box-shadow: 0px 5px 15px rgba(0, 0, 0, .25);
+}
+
+#donators-jumbotron {
+	background: url(../images/donator-jumbotron.jpg) !important;
+	
+}
+
+.donators p {
+	position: inherit;
+	overflow: inherit;
+}
+
+.donators img {
+	width: 50%;
+}
+
+.donators h3 {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
 
 
 
