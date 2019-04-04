@@ -211,7 +211,7 @@ nav a{
 
 
 .container-fluid {
-	overflow-x: hidden;
+	overflow: hidden;
 }
 
 
