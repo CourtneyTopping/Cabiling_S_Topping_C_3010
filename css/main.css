@@ -484,8 +484,35 @@ footer img {
 	text-align: center;
 }
 
+/*GALLERY*/
+#myCarousel
+{
+	margin-top: 80px;
+}
 
+#myCarousel .list-inline {
+	margin-top: 20px;
+	margin-right: 0px;
+    white-space:nowrap;
+    overflow-x:auto;
+}
 
+#myCarousel .carousel-indi {
+    position: static;
+    left: initial;
+    width: initial;
+    margin-left: initial;
+}
+
+#myCarousel .carousel-indi > li {
+    width: initial;
+    height: 60px;
+    text-indent: initial;
+}
+
+#myCarousel .carousel-indi > li.active img {
+    opacity: 0.7;
+}
 
 /*MEDIA QUERIES*/
 
@@ -549,7 +576,19 @@ footer img {
 	.navbar-brand img{
 	width: 50%;
 }
-	
+	#myCarousel {
+		margin-top: 150px;
+	}
 }
 
+@media (max-width: 550px) {
+	#myCarousel {
+		margin-top: 100px;
+	}
+}
 
+@media (max-width: 375px) {
+	#myCarousel {
+		margin-top: 50px;
+	}
+}
