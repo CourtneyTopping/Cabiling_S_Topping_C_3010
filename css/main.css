@@ -126,6 +126,10 @@ nav a{
 
 /* GALLERY */
 
+#gallery-jumbotron {
+	background-image: url(../images/gallery-jumbot.jpg);
+	background-size: cover;
+}
 
 #carousel {
 	margin: 0px 10px 10px 10px;
@@ -446,9 +450,10 @@ footer img {
 	content: none;
 }
 
-#progressbar li:nth-child(even) {
+#progressbar li:nth-child(2) {
 		opacity: 0.5;
 }
+
 
 #progressbar li.active {
 	color: black;
@@ -462,6 +467,71 @@ footer img {
 #progressbar li.active + li:after {
 	background-color:#E2E1E1;
 }
+
+/* Progress Bar ORDER*/
+#progressbar-order {
+	counter-reset: step;
+	margin-bottom: 90px;
+}
+
+#progressbar-order li {
+	list-style-type: none;
+	float: left;
+	width: 33%;
+	position: relative;
+	text-align: center;
+	color: #C6C6C6;
+}
+
+#progressbar-order li:before {
+	content: counter(step);
+	counter-increment: step;
+	width: 40px;
+	height: 40px;
+	line-height: 30px;
+	display: block;
+	text-align: center;
+	margin: 0 auto 10px auto;
+	background: url(../images/paw.svg) no-repeat;
+	
+}
+
+#progressbar-order li:after {
+	content: '';
+	position: absolute;
+	width: 80%;
+	height: 2px;
+	background-color: #ccc;
+	top: 15px;
+	left: -40%;
+	z-index: -2;
+}
+
+#progressbar-order li:first-child:after {
+	content: none;
+}
+
+#progressbar-order li:nth-child(2) {
+		opacity: 0.5;
+}
+
+#progressbar-order li:nth-child(3){
+	opacity: 0.5;
+}
+
+#progressbar-order li.active {
+	color: black;
+	font-weight: bolder;
+}
+
+#progressbar-order li.active:before {
+	border-color: black;
+}
+
+#progressbar-order li.active + li:after {
+	background-color:#E2E1E1;
+}
+
 
 .donators {
 
@@ -502,6 +572,7 @@ footer img {
 #myCarousel
 {
 	margin-top: 10px;
+	
 }
 
 #myCarousel .list-inline {
@@ -545,9 +616,14 @@ footer img {
 /*Testimonials*/
 
 #testi{
-	margin-top: 250px;
+	margin-top: 80px;
 }
 
+/*Order*/
+
+.order-img {
+	width: 50%;
+}
 
 /*MEDIA QUERIES*/
 

@@ -68,22 +68,30 @@
         </ul>
     </div>
 </nav>
-	  <!--END NAV-->
 	  
-	  
-
+	  <!-- Jumbotron for Desc-->
 <div class="jumbotron jumbotron-fluid" id="donate-jumbotron">
 		  <div class="container">
-			<h2 class="display-4 text-light">Own a Book of Your Own!</h2>
+			<h2 class="display-4 text-light">Show Your Support</h2>
 			<p class="lead text-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse felis nunc, vestibulum in nisi vel, posuere molestie elit. Aenean at convallis purus. </p>
 		  </div>
 </div>
-	  	  
-	  <h1 id="step1">Step #1 Select Your Book</h1>
-	  <div class="container">	<!--Books CONTAINER-->
-		<div class="row justify-content-center">
-				<div class="book1 col-lg-6">
-					<img src="images/Book1.jpg" class="img-responsive d-block mx-auto mb-3" alt="Book 1 Cover">
+	
+<!--Donation Form-->
+<div class="container">
+<div class="row justify-content-center">
+	<div class="col-lg-9">
+	  <!--bar-->
+	  <ul id="progressbar-order">
+		  <li class="active">Amount</li>
+		  <li>Details</li>
+		  <li>Donate</li>
+	  </ul>
+	  <!--input field-->
+		<div class="formCard text-center">
+		
+		<div class="title text-center"><h2>Select Your Book</h2></div>
+		 <img src="images/Book1.jpg" class="img-responsive mb-3 order-img" alt="Book 1 Cover">
 					<h3>Chico's First Trip by the Dentist</h3>
 					 <small class="text-muted">By Jen Dafoe</small>
 					<p class="text-justify"><strong>Chico</strong> is a pint-sized Peka-Tzu who is going for his first ever visit to the dentist. He is very nervous about this new experience. When he gets to the dentist's, Chico meets the very nice nurse and doctor and they explain the different things he sees and hears in this strange place. Chico learns that it is very important to take good care of his teeth...and to make regular visits to his new friends at the dentist's office!</p>
@@ -104,9 +112,8 @@
 							<option>Bulk (24 books)</option>
 						</select>
 				  	</div>
-				</div>
-				<div class="book2 col-lg-6">
-					<img src="images/Book1.jpg" class="img-responsive d-block mx-auto mb-3" alt="Book 2 Cover">
+		
+		  	<img src="images/Book1.jpg" class="img-responsive mb-3 order-img" alt="Book 2 Cover">
 					<h3>Chico Book II</h3>
 					 <small class="text-muted">By Jen Dafoe</small>
 					<p class="text-justify"><strong>Chico</strong> is a pint-sized Peka-Tzu who is going for his first ever visit to the dentist. He is very nervous about this new experience. When he gets to the dentist's, Chico meets the very nice nurse and doctor and they explain the different things he sees and hears in this strange place. Chico learns that it is very important to take good care of his teeth...and to make regular visits to his new friends at the dentist's office!</p>
@@ -127,25 +134,29 @@
 							<option>Bulk (24 books)</option>
 						</select>
 				  	</div>
-				</div>
-		</div>
-</div>
-		  
-		 
-		  <div class="col-lg-8 formCard text-center">
-			  <h1 id="step2">Step #2 Provide Your Payment</h1> 
+			  
+			<button type="button" class="btn btn-warning mx-auto d-block">Next</button>
+			 </div>
+		
+
+											
+		<div class="formCard text-center">
+			 <h3 class="title">Provide us with your details</h3>
 			<img src="images/transc.svg" alt="Transaction buttons">
 			<input type="text" name="firstname" class="mb-2" placeholder="First Name">
 			<input type="text" name="lastname" class="mb-2" placeholder="Last Name">
+			<input type="text" class="mb-2" placeholder="Email">
 			<input type="text" class="mb-2" placeholder="Card Number">
 			<input type="text" class="mb-2" placeholder="MM / YY">
 			<input type="text" class="mb-2" placeholder="CVV">
 			<input type="text" class="mb-2" placeholder="Card Holder's Name">
-			
+			<div>
+				<button type="button" class="btn btn-warning mx-auto">Previous</button>
+				<button type="button" class="btn btn-warning mx-auto">Submit</button>
+			</div>
 		</div>
-		  
-	  <div class="formCard text-center">
-		  <h1 id="step3">Step #3 Donate</h1>
+		<div class="formCard text-center">
+		  <h1 id="step3">Donate</h1>
 		  <h3 class="title text-center">Select an Amount</h3>
 		  <button type="button" class="btn btn-warning" data-toggle="button" aria-pressed="true">$10</button>
 		  <button type="button" class="btn btn-warning" data-toggle="button" aria-pressed="false">$20</button>
@@ -153,11 +164,21 @@
 		  <button type="button" class="btn btn-warning" data-toggle="button" aria-pressed="false">$100</button>
 		  <label>Or Input Amount</label>
 		  <input type="number" class=" val-input text-center mb-5" placeholder="$">
-		  <button type="button" class="btn btn-warning mx-auto d-block">Not Today</button>
-	  </div>
-	  <div class="text-center">
+			<div>
+				<button type="button" class="btn btn-warning mx-auto ">Not Today</button>
 				<button type="button" class="btn btn-warning mx-auto" id="final">Submit</button>
 			</div>
+	  	</div>
+		<div class="formCard text-center">
+			 <h3 class="title">Thank You!</h3>
+			<img src="images/thank you.svg" class="w-25" alt="Thank you">
+			<p>A copy of the receipt will be in your email address</p>
+		</div>
+	
+		</div>		
+	</div>
+</div>	
+	  
  <!--FOOTER-->
 <div class="container-fluid">
 	<div class="row">
@@ -202,15 +223,11 @@
 	<p class="text-center text-light p-2">Content © 2009 - 2019 Chico's Adventures For Kids. All rights reserved.</p>
 </div>
 </div>
-	  
-
-	  
-
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	 <script src="js/main.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </body>
 </html>
-
