@@ -28,7 +28,15 @@ body {
 	padding-bottom: 80px;
 	padding-top: 90px;
 }
+label
+{
+	font-family: 'Chewy';
+}
 
+placeholder
+{
+	font-family: 'Chewy';
+}
 
 .container-fluid {
 	padding-right: 0px;
@@ -485,9 +493,15 @@ footer img {
 }
 
 /*GALLERY*/
+
+#galleryHeader {
+	margin-top: 50px;
+	text-align: center;
+}
+
 #myCarousel
 {
-	margin-top: 80px;
+	margin-top: 10px;
 }
 
 #myCarousel .list-inline {
@@ -495,6 +509,10 @@ footer img {
 	margin-right: 0px;
     white-space:nowrap;
     overflow-x:auto;
+	padding:10px;
+	background-color: linear-gradient(to right, #fffcdc, #d9a7c7);
+	border-radius: 5px;
+	box-shadow: 0px 5px 15px rgba(0, 0, 0, .25);
 }
 
 #myCarousel .carousel-indi {
@@ -511,8 +529,25 @@ footer img {
 }
 
 #myCarousel .carousel-indi > li.active img {
-    opacity: 0.7;
+    opacity: 0.5;
 }
+
+/*CONTACT*/
+
+.shadow-textarea textarea.form-control::placeholder {
+    font-weight: 300;
+}
+.shadow-textarea textarea.form-control {
+    padding-left: 0.8rem;
+}
+
+
+/*Testimonials*/
+
+#testi{
+	margin-top: 250px;
+}
+
 
 /*MEDIA QUERIES*/
 
