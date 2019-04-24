@@ -562,6 +562,12 @@ footer img {
 	text-align: center;
 }
 
+/*Future*/
+
+#future-jumbotron {
+	background: url(../images/future-jumbo.jpg) !important;
+	background-size: cover;
+}
 /*GALLERY*/
 
 #galleryHeader {
@@ -603,6 +609,38 @@ footer img {
     opacity: 0.5;
 }
 
+/*Newsletter*/
+
+#email-input {
+	background-image: linear-gradient(to right top, #845ec2, #806ecc, #7e7cd4, #7d8adb, #7f97e1, #8c9de5, #98a4ea, #a3aaee, #b9abf1, #cfacf2, #e4adf1, #f8aeed);
+	min-height: 250px;
+}
+
+#topic1 {
+	background-color: #FC8789;
+	min-height: 300px;
+}
+
+#topic2 {
+	background-color: #A798EF;
+	min-height: 300px;
+}
+
+#topic3 {
+	background-color: #BEE9BB;
+	min-height: 200px;
+}
+
+#topic4 {
+	background-color: #FEFFAA;
+	min-height: 200px;
+}
+
+#topic5 {
+	background-color: #D6FBF3;
+	min-height: 200px;
+}
+
 /*CONTACT*/
 
 .shadow-textarea textarea.form-control::placeholder {
@@ -628,7 +666,7 @@ footer img {
 /*MEDIA QUERIES*/
 
 @media (max-width: 575.98px) {
-		nav a{
+	nav a{
 	font-family: 'Chewy';
 	font-size: 1rem;
 }

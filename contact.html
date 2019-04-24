@@ -29,25 +29,28 @@
 		<!--Burger Toggle-->
 		<div class="collapse navbar-collapse w-100 order-1 order-lg-0" id="navbarNav">
         
+			   
 			<!--Links-->
 			<ul class="navbar-nav ml-auto">
             <li class="nav-item">
 				<a class="nav-link text-nowrap" href="index.html">Home</a>
 			</li>
-				<div class="dropdown-divider"></div>
-			<li class="nav-item">
-				<a class="nav-link text-nowrap" href="about.html">About</a>
-			</li>
-				<div class="dropdown-divider"></div>
+			<div class="dropdown-divider"></div>
 			<li class="nav-item dropdown">
-				<a class="nav-link dropdown-toggle text-nowrap" data-toggle="dropdown" data-target="drowpdown_target" href="donate.html">Donate</a>
+				<a class="nav-link dropdown-toggle text-nowrap" data-toggle="dropdown" data-target="drowpdown_target" href="donate.html">About</a>
 				<span class="caret"></span>
 				<div class="dropdown-menu" aria-labelledby="dropdown_target">
-					<a class="dropdown-item" href="donate.html">Donate</a>
-						<div class="dropdown-divider"></div>
-					<a class="dropdown-item" href="donators.html">Donators</a>
-						<div class="dropdown-divider"></div>
+					<a class="dropdown-item" href="about.html">About</a>
+					<div class="dropdown-divider"></div>
+					<a class="dropdown-item" href="future.html">Chico's Future</a>
+					<div class="dropdown-divider"></div>
+					<a class="dropdown-item" href="newsletter.html">Newsletter</a>
+					<div class="dropdown-divider"></div>
 				</div>
+			</li>
+				<div class="dropdown-divider"></div>
+			<li class="nav-item">
+				<a class="nav-link text-nowrap" href="donate.html">Donate</a>
 			</li>
 				<div class="dropdown-divider"></div>
 			<li class="nav-item">
@@ -98,6 +101,15 @@
 				<label for="comments">Comments or Questions:</label>
   <textarea class="form-control z-depth-1" id="exampleFormControlTextarea6" rows="3" placeholder="Write something here..."></textarea>
 </div>
+				 
+		<div class="form-group">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="gridCheck">
+      <label class="form-check-label" for="gridCheck">
+        Subscribe to our mailing list and get monthly updates
+      </label>
+    </div>
+  </div>
 			<div>
 				<button type="button" class="btn btn-warning mx-auto">Submit</button>
 			</div>
@@ -120,7 +132,7 @@
 	
     <div class="container">
       <div class="row justify-content-center">
-        <div class="col-lg-4 mb-4 mt-4">
+        <div class="col-lg-3 mb-4 mt-4">
           <h3 class="text-light">Jen Dafoe</h3>
           <ul class="contact-info list-unstyled">
             <li><img src="images/email.svg" class="location"><a href="mailto:jendafoe@publishing.com" class="text-light text-muted">jendafoe@publishing.com</a></li>
@@ -128,19 +140,29 @@
 			<li><img src="images/fb.svg" class="location"><a href="https://www.facebook.com/ChicoHelpsSickKids/" class="text-light text-muted">Chico's Adventures</a></li>
           </ul>
         </div>
-		  <div class="col-lg-4 mb-4 mt-4 text-center">
+		  <div class="col-lg-3 mb-4 mt-4 text-center">
 			<h3 class="text-light">Want to volunteer?</h3>
-			 <input type="email" placeholder="Enter email address" class="mb-2">
-			<input type="text" placeholder="Comment" class="mb-2"> 
+			 <input type="email" placeholder="Enter email address" class="mb-2 form-control">
+			<input type="text" placeholder="Comment" class="mb-2 form-control"> 
 			<a href="contact.html"><button type="button" class="btn btn-warning mx-auto d-block">Submit</button></a>
 		</div>
-        <div class="col-lg-4 mb-4 mt-4 text-center">
+        <div class="col-lg-3 mb-4 mt-4 text-center">
           <h3 class="text-light">Want to support our cause?</h3>
 		<div class="row justify-content-center">
 		<a href="donate.html"><button type="button" class="btn btn-warning mx-auto d-block f-donate">Donate</button></a>
 		<a href="order.html"><button type="button" class="btn btn-warning mx-auto d-block">Order</button></a>
 		</div>
         </div>
+		<div class="col-lg-3 mb-4 mt-4 text-center">
+          <h3 class="text-light">Subscribe to our Newsletter</h3>
+		<div class="row justify-content-center">
+		 <input type="text" class="form-control" placeholder="Enter email address"> 
+            <span class="input-group-btn">
+                <button class="btn btn-warning mt-2" type="button">Subsribe</button>
+            </span>
+		</div>
+        </div>
+		
       
       </div>
     </div>
@@ -153,8 +175,10 @@
 	<p class="text-center text-light p-2">Content © 2009 - 2019 Chico's Adventures For Kids. All rights reserved.</p>
 </div>
 </div>
+
 	  
 
+	  
 	  
 
     <!-- Optional JavaScript -->
